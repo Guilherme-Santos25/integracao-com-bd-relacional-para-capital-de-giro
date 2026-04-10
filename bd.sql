@@ -3,7 +3,7 @@ create table clientes(
 	nome varchar(100) not null,
 	instagram varchar(100),
 	telefone varchar (15) not null,
-	email varchar(100)
+	email varchar(110)
 );
 
 create table despesa_fixa(
