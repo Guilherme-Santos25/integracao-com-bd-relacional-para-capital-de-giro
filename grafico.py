@@ -6,7 +6,7 @@ import pandas as pd
 
 
 def carregar_dados():
-    caminho = os.path.join(os.path.dirname(_file_), 'bdsqlite.db')
+    caminho = os.path.join(os.path.dirname(__file__), 'bdsqlite.db')
     conexao = sql.connect(caminho)
 
     query = """
@@ -183,5 +183,5 @@ def main():
     plt.show()
 
 
-if _name_ == '_main_':
+if _name_ == '__main__':
     main()
